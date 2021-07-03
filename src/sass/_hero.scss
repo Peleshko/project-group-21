@@ -1,0 +1,44 @@
+.hero__title {
+  font-style: 400;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.hero__description {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 164.9%;
+  /* or 33px */
+  margin-bottom: 109px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+
+  color: var(--title-text-color);
+}
+
+.hero__description--grey {
+  font-weight: 500;
+  color: var(--second-color);
+}
+.hero__description--orange {
+  color: var(--accent-color);
+}
+.hero__button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  width: 354px;
+  padding: 27px 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
