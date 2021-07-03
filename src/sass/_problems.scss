@@ -1,0 +1,9 @@
+.problems {
+  &__list {
+    counter-reset: section;
+  }
+  &__item::before {
+    counter-increment: section;
+    content: '— ' counter(section) ' ';
+  }
+}
