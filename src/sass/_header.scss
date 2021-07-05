@@ -6,11 +6,40 @@
       display: flex;
       margin-right: 60px;
    }
-   &__item:not(:last-child) {
-      margin-right: 40px;
-   }
+   &__item{
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.21;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: var(--grey-text-bg-color);
+      &:not(:last-child) {
+         margin-right: 40px;
+      }
+      &:focus,
+      &:hover {
+         color: var(--accent-color);
+      }    
+   }   
    &__button{
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.21;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-color);
       padding: 26px  23px;
+      border-style: solid;
+      border-width: 2px;
+      border-color: var(--accent-color);
+      background-color: transparent;
+      cursor: pointer;
    }
 }
 .container__logo{
