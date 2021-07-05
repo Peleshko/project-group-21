@@ -1,0 +1,115 @@
+.advantages {
+  margin: 0 auto;
+}
+.advantages__title {
+  font-style: 400;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+
+  color: var(--dark-text-bg-color);
+}
+.advantages__title--visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6 IE7 */
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.advantages__list {
+  min-width: 216px;
+  // margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  // justify-content: center;
+
+  // Tablet 768
+  @media screen and (min-width: 768px) {
+    margin: 0 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  // 1366
+  @media screen and (min-width: 768px) {
+    // margin: 0 148px 0 188px;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  width: 215px;
+  // justify-content: center;
+  align-items: center;
+  border: 0;
+  outline: none;
+
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  // Tablet 768
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 21px) / 3);
+    margin-bottom: 26px;
+  }
+  //Desktop >1366
+  @media screen and (min-width: 1366px) {
+    position: relative;
+  }
+  // advantages__description
+}
+
+.advantages__thumb {
+  margin-right: 10px;
+
+  //Desktop >1366
+  @media screen and (min-width: 1366px) {
+    margin-right: 0;
+  }
+}
+
+.advantages__icon {
+  width: 59px;
+  height: 60px;
+
+  //Desktop >1366
+  @media screen and (min-width: 1366px) {
+    width: 100px;
+    height: 102px;
+  }
+}
+
+.advantages__description {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.64;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  color: var(--dark-text-bg-color);
+
+  //Desktop >1366
+  @media screen and (min-width: 1366px) {
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    margin: 18px 0 18px 82px;
+
+    // margin-right: 80px;
+  }
+}

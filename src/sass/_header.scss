@@ -1,0 +1,24 @@
+.header{
+   display: flex;
+   margin-top: 30px;
+   margin-bottom: 43px;
+   &__list{
+      display: flex;
+      margin-right: 60px;
+   }
+   &__item:not(:last-child) {
+      margin-right: 40px;
+   }
+   &__button{
+      padding: 26px  23px;
+   }
+}
+.container__logo{
+   display: flex;
+   align-items: center;
+}
+.logo{
+   &__header{
+      margin-right: 144px;
+   }
+}

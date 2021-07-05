@@ -1,0 +1,46 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--animation-timing-function);
+
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
+    }    
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--grey-text-bg-color);
+    letter-spacing: 0.08em;
+}
