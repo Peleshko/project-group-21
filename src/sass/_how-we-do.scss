@@ -51,12 +51,15 @@
 
   &:hover > .how-we-do__item-icon,
   &:focus > .how-we-do__item-icon,
+  &:hover > .how-we-do__item-line,
+  &:focus > .how-we-do__item-line,
   &:hover > .how-we-do__item-heading,
   &:focus > .how-we-do__item-heading,
   &:hover > .how-we-do__item-description,
   &:focus > .how-we-do__item-description {
     color: var(--white-text-bg-color);
     fill: var(--white-text-bg-color);
+    border-color: var(--white-text-bg-color);
   }
 }
 
@@ -78,10 +81,11 @@
 }
 
 .how-we-do__item-line {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--accent-color);
   width: 20px;
   margin-left: auto;
   margin-right: auto;
+  transition: var(--animation-timing-function);
 }
 
 .how-we-do__item-description {
