@@ -14,6 +14,7 @@ margin-bottom: 18px;
 .footer_contact {
 display: flex;
 justify-content: center;
+margin-bottom: 30px;
 }
 
 .footer_phone {
@@ -32,7 +33,11 @@ margin-right: 10px ;
 }
 
 .footer_instagram {
-background-image: url(../images/icons.svg#icon-instagram);
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/instagram.svg);
 }
 
 .footer_bg {
