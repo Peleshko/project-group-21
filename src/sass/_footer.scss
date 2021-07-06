@@ -35,8 +35,8 @@ margin-right: 10px ;
 .footer_instagram {
     display: block;
     margin: auto;
-    height: 40px;
     width: 40px;
+    height: 40px;
     background-image: url(../images/instagram.svg);
 }
 
@@ -46,6 +46,28 @@ margin-right: 10px ;
     padding-bottom: 21px;
 }
 
-.footer_rights {
+@media screen and (min-width: 768px) {
+   .footer-padding {
+       display: flex;
+       align-items: center;
+       padding-top: 40px;
+       padding-bottom: 40px;
+   } 
 
+   .footer_logo {
+       margin-bottom: 0px;
+       margin-right: 203px;
+   }
+
+   .footer_contact {
+       margin-bottom: 0px;
+   }
+
+   .footer_contact::after {
+       content: "";
+       display: inline-block;
+       height: 40px;
+       margin-left: 24px;
+       border-right: 1px solid #B9B9B9;
+   }
 }
