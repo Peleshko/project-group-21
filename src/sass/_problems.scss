@@ -1,9 +1,67 @@
 .problems {
+  background-color: var(--white-text-bg-color);
+  background-image: linear-gradient(
+    to bottom,
+    var(--dark-text-bg-color) 75%,
+    var(--primary-bg-color) 75%
+  );
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 27px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1365px) {
+    padding-left: 42px;
+    padding-top: 60px;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.29;
+    letter-spacing: 0.03em;
+
+    color: var(--white-text-bg-color);
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
+      margin-bottom: 25px;
+    }
+  }
+  &__help {
+    color: var(--accent-color);
+  }
   &__list {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 25px;
+    padding-bottom: 4px;
     counter-reset: section;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: var(--white-text-bg-color);
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
+      display: flex;
+    }
+  }
+  &__item {
+    line-height: 1.71;
+    color: var(--dark-text-bg-color);
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
+      flex-basis: calc(100% / 2 - 30px);
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
   }
   &__item::before {
+    display: block;
+    margin-bottom: 5px;
     counter-increment: section;
-    content: '— ' counter(section) ' ';
+    content: '— 0' counter(section) ' ';
+    line-height: 1.21;
+    color: var(--accent-color);
   }
 }

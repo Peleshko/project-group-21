@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/*
+  Главный файл стилей.
+  Все паршалы подключаются сюда.
+ */
+/*@import './example';*/
+:root {
+  --accent-color:#FF6B09;
+  --primary-bg-color: #E5E5E5;
+  --dark-text-bg-color: #111518;
+  --grey-text-bg-color: #b9b9b9;
+  --white-text-bg-color: #FFFFFF;
+  --transition-duration: 250ms;
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: var(--transition-duration);
+          transition-duration: var(--transition-duration);
+  -webkit-transition-timing-function: var(--animation-timing-function);
+          transition-timing-function: var(--animation-timing-function);
+}
+
+a:focus, a:hover {
+  color: var(--accent-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--grey-text-bg-color);
+  letter-spacing: 0.08em;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    width: 1366px;
+  }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 43px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 60px;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header__button {
+  padding: 26px  23px;
+}
+
+.container__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__header {
+  margin-right: 144px;
+}
+
+.problems__list {
+  counter-reset: section;
+}
+
+.problems__item::before {
+  counter-increment: section;
+  content: "— " counter(section) " ";
+}
+
+.benefits__list {
+  counter-reset: section;
+}
+
+.benefits__item::before {
+  counter-increment: section;
+  content: "— " counter(section) " ";
+}
