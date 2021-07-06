@@ -51,3 +51,18 @@
       margin-right: 144px;
    }
 }
+.close-button{
+   position: absolute;
+   top: 59px;
+   right: 43px;
+   &__icon{
+      fill: #000000;
+   }
+}
+.mobile-menu.is-open {
+   opacity: 1;
+   visibility: visible;
+   pointer-events: auto;
+   -webkit-transform: translateX(0);
+           transform: translateX(0);
+ }
