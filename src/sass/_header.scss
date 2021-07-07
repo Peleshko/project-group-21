@@ -2,15 +2,59 @@
    display: flex;
    margin-top: 30px;
    margin-bottom: 43px;
+   &__navigation{
+      display: flex;
+   }
    &__list{
+      @media screen and (max-width: 1365px) {
+         display: none;
+      }
       display: flex;
       margin-right: 60px;
    }
-   &__item:not(:last-child) {
-      margin-right: 40px;
-   }
+   &__item{
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.21;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: var(--grey-text-bg-color);
+      &:not(:last-child) {
+         margin-right: 40px;
+      }
+      &:focus,
+      &:hover {
+         color: var(--accent-color);
+      }    
+   }   
    &__button{
-      padding: 26px  23px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.21;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      border-style: solid;
+      border-width: 2px;
+      border-color: var(--accent-color);
+      background-color: transparent;
+      cursor: pointer;
+      @media screen and (mim-width: 768px) and (max-width: 1365px) {
+         padding: 15px  5px;
+      }
+      @media screen and (mim-width: 768px) and (min-width: 1366px) {
+         padding: 26px  23px;
+      }
+      @media screen and (max-width: 767px) {
+         display: none;
+      }
+      
    }
 }
 .container__logo{
@@ -21,4 +65,31 @@
    &__header{
       margin-right: 144px;
    }
+   
 }
+.menu-button{
+   display: flex;
+   @media screen and (min-width: 1365px) {
+      display: none;
+   }
+}
+.mobile-menu{
+   @media screen and (min-width: 769px) {
+      display: none;
+   }
+}
+.close-button{
+   position: absolute;
+   top: 59px;
+   right: 43px;
+   &__icon{
+      fill: #000000;
+   }
+}
+.mobile-menu.is-open {
+   opacity: 1;
+   visibility: visible;
+   pointer-events: auto;
+   transform: translateX(0);
+ }
+ // @media screen and (min-width: 768px)

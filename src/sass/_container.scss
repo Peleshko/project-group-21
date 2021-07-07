@@ -1,27 +1,24 @@
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 
-}
-
-// 480+
-@media screen and (min-width: 480px) {
-    .container {
+    // 480+
+    @media screen and (min-width: 480px) {
         width: 480px;
         margin: auto;
-    }
-}
+     }
 
-// 768+
-@media screen and (min-width: 768px) {
-    .container {
+     // 768+
+    @media screen and (min-width: 768px) {
         width: 768px;
-    }
-}
+        padding-left: 40px;
+        padding-right: 40px;    
+     }
 
 // 1366+
-@media screen and (min-width: 1366px) {
-    .container {
+    @media screen and (min-width: 1366px) {
         width: 1366px;
-    }
+        padding-left: 26px;
+        padding-right: 26px;    
+     }
 }
