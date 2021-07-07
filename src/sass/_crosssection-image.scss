@@ -1,0 +1,31 @@
+.crossection-image {
+  position: absolute;
+  z-index: 1;
+  width: 176px;
+  height: 137px;
+  transform: translateY(-82%);
+  right: 0;
+  background-image: url('./../images/program/program@1x.jpg');
+  background-size: cover;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .crossection-image {
+    width: 384px;
+    height: 280px;
+    transform: translateY(-90%);
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .crossection-image {
+    width: 47%;
+    height: 502px;
+    transform: translateY(-70%);
+    right: auto;
+    left: -100px;
+    opacity: 1;
+  }
+}
