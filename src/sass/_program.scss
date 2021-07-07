@@ -1,0 +1,45 @@
+.program {
+  background-color: black;
+}
+
+.program__title {
+  text-align: center;
+}
+
+.program__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.program__list-item {
+  margin-left: 25%;
+  padding-left: 30px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    content: '';
+    height: 100%;
+    border-left: 1px solid var(--accent-color);
+  }
+
+  &::after {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    content: '';
+    border-radius: 50%;
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    text-align: center;
+    line-height: 24px;
+    background: var(--accent-color);
+  }
+
+  &:last-of-type::before {
+    border: none;
+  }
+}
