@@ -20,13 +20,22 @@
       );
     }
     @media screen and (min-width: 1366px) {
-      // padding-bottom: 213px;
-      // padding-top: 115px;
+      padding-top: 115px;
       background-image: linear-gradient(
         to bottom,
-        var(--dark-text-bg-color) 65%,
-        var(--primary-bg-color) 65%
+        var(--dark-text-bg-color) 80%,
+        var(--primary-bg-color) 80%
       );
+    }
+  }
+  &__wrapper {
+    @media screen and (min-width: 1366px) {
+      background-image: url('../images/problems/problems_campfire.svg');
+
+      background-repeat: no-repeat;
+      background-size: 390px 585px;
+      background-position: right bottom 69px;
+      max-width: 1691px;
     }
   }
 
@@ -56,7 +65,7 @@
   }
   &__list {
     counter-reset: item;
-
+    z-index: 10;
     background-color: var(--white-text-bg-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     @media screen and (max-width: 767px) {
@@ -68,8 +77,6 @@
     @media screen and (min-width: 768px) and (max-width: 1365px) {
       display: flex;
       flex-wrap: wrap;
-      margin-left: -30px;
-      margin-top: -30px;
       padding-top: 30px;
       padding-left: 96px;
       padding-bottom: 10px;
@@ -77,14 +84,11 @@
     @media screen and (min-width: 1366px) {
       display: flex;
       flex-wrap: wrap;
-      width: 1314px;
 
       padding-top: 69px;
       padding-left: 114px;
       padding-bottom: 61px;
       padding-right: 112px;
-      margin-left: -40px;
-      margin-bottom: -32px;
     }
   }
   &__item {
@@ -93,7 +97,7 @@
     line-height: 1.71;
     color: var(--dark-text-bg-color);
     @media screen and (min-width: 768px) and (max-width: 1365px) {
-      max-width: 200px;
+      max-width: 225px;
       flex-basis: calc(100% / 2 - 60px);
       margin-left: 30px;
       margin-top: 30px;
