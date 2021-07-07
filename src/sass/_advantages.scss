@@ -1,8 +1,4 @@
-.advantages {
-  margin: 0 auto;
-}
 .advantages__title {
-  font-style: 400;
   font-weight: 800;
   font-size: 58px;
   line-height: 1.3;
@@ -20,96 +16,148 @@
   width: 1px !important;
   overflow: hidden;
 }
-
+.container__advant {
+  background-color: #e5e5e5;
+  margin: 0;
+}
+// ====================================================
+// ====================================================
+.advantages__box {
+  margin: 0 auto;
+}
 .advantages__list {
-  min-width: 216px;
-  // margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  // justify-content: center;
+  margin: 0;
+
+  // Mobile 480
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    padding: 0 32px;
+  }
 
   // Tablet 768
   @media screen and (min-width: 768px) {
-    margin: 0 40px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    justify-content: space-around;
   }
 
-  // 1366
-  @media screen and (min-width: 768px) {
-    // margin: 0 148px 0 188px;
-    margin: 0;
+  // Desctop 1366
+  @media screen and (min-width: 1366px) {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: row;
+    justify-content: flex-start;
   }
 }
 
 .advantages__item {
-  display: flex;
-  width: 215px;
-  // justify-content: center;
-  align-items: center;
-  border: 0;
-  outline: none;
-
-  &:not(:last-child) {
-    margin-bottom: 26px;
+  @media screen and (max-width: 767px) {
+    display: inline-flex;
+    justify-content: center;
+    height: 69px;
+    width: 215px;
+  }
+  @media screen and (max-width: 1965px) {
+    display: inline-flex;
+    justify-content: center;
+    height: 69px;
+    width: 688px;
   }
 
-  // Tablet 768
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 21px) / 3);
-    margin-bottom: 26px;
-  }
-  //Desktop >1366
   @media screen and (min-width: 1366px) {
     position: relative;
-  }
-  // advantages__description
-}
-
-.advantages__thumb {
-  margin-right: 10px;
-
-  //Desktop >1366
-  @media screen and (min-width: 1366px) {
-    margin-right: 0;
+    display: flex;
   }
 }
-
-.advantages__icon {
-  width: 59px;
-  height: 60px;
-
-  //Desktop >1366
+.advantages__item:not(:last-child) {
+  // Mobile 768
+  @media screen and (max-width: 767px) {
+    margin-bottom: 21px;
+  }
   @media screen and (min-width: 1366px) {
-    width: 100px;
+    margin-right: 348px;
+  }
+}
+
+.advantages__item::before {
+  @media screen and (max-width: 1365px) {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 60px;
+    height: 60px;
+    margin-right: 16px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 74px;
+    margin: auto;
+    left: 65px;
+    top: 45px;
+    bottom: 0;
+    min-width: 100px;
     height: 102px;
   }
 }
+
+// -===================---------------==================
+//   // Tablet 768
+//   @media screen and (min-width: 768px) {
+//     flex-basis: calc((100% - 21px) / 3);
+//     margin-bottom: 26px;
+//   }
+//   //Desktop >1366
+//   @media screen and (min-width: 1366px) {
+//     position: relative;
+//   }
+// }
 
 .advantages__description {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.64;
-
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.08em;
+  line-height: 1.65;
   color: var(--dark-text-bg-color);
 
-  //Desktop >1366
+  // Desktop >1366
   @media screen and (min-width: 1366px) {
+    top: 20px;
+    left: 86px;
     font-size: 20px;
-    position: absolute;
-    width: 100%;
-    margin: 18px 0 18px 82px;
+    line-height: 1.65;
+  }
+}
 
-    // margin-right: 80px;
+.advantages__item--student::before {
+  @media screen and (max-width: 1365px) {
+    background-image: url('../images/advant/adv-group1.svg');
+  }
+  @media screen and (min-width: 1366px) {
+    background-image: url('../images/advant/adv-group1-desctop.svg');
+  }
+}
+
+.advantages__item--mobilelearning::before {
+  @media screen and (max-width: 1365px) {
+    background-image: url('../images/advant/adv-group2.svg');
+  }
+  @media screen and (min-width: 1366px) {
+    background-image: url('../images/advant/adv-group2-desctop.svg');
+  }
+}
+
+.advantages__item--insurance::before {
+  @media screen and (max-width: 1365px) {
+    background-image: url('../images/advant/adv-group3.svg');
+  }
+  @media screen and (min-width: 1366px) {
+    background-image: url('../images/advant/adv-group3-desctop.svg');
   }
 }
