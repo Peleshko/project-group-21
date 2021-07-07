@@ -1,48 +1,97 @@
 .about {
-  margin-top: 130px;
-  margin-bottom: 130px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 1366px) {
+    margin-top: 130px;
+    margin-bottom: 130px;
+  }
 }
 .about__title {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-weight: 800;
-  font-size: 46px;
+  font-size: 20px;
   line-height: 1.3;
   letter-spacing: 0.03em;
   color: #111518;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1366px) {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
 }
 .about__flex-container {
-  width: 1205px;
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-width: 1205px;
+  }
+  @media screen and (min-width: 1366px) {
+    max-width: 668px;
+  }
 }
 .about_img {
-  min-width: 530px;
+  margin-bottom: 20px;
+  min-width: 243px;
   height: auto;
+  @media screen and (min-width: 1366px) {
+    min-width: 530px;
+  }
 }
 .about__info {
-  margin-left: 33px;
+  max-width: 280px;
+  @media screen and (min-width: 768px) {
+    max-width: 402px;
+    margin-left: 43px;
+  }
+  @media screen and (min-width: 1366px) {
+    margin-left: 30px;
+    max-width: 642px;
+  }
 }
 
 .about__title-list {
-  padding-bottom: 15px;
-  margin-bottom: 30px;
-
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.23;
   letter-spacing: 0.08em;
   color: #111518;
 
   border-bottom: 1px solid #b9b9b9;
+
+  @media screen and (min-width: 1366px) {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    font-size: 30px;
+  }
 }
 .about__list {
-  width: 579px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 35px;
+  }
+  @media screen and (min-width: 1366px) {
+    margin-bottom: 40px;
+  }
 }
 .about__list-item {
   position: relative;
-
-  margin-bottom: 30px;
-  padding-left: 50px;
+  padding-left: 30px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 25px;
+    }
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 30px;
+      padding-left: 50px;
+    }
+  }
 
   &::before {
     content: '';
@@ -50,49 +99,77 @@
     top: 0;
     left: 0;
     background-image: url(../images/about/check__about.svg);
-    width: 28px;
-    height: 20px;
+    width: 17px;
+    height: 14px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
+    @media screen and (min-width: 1366px) {
+      width: 28px;
+      height: 20px;
+    }
   }
-}
-.check-svg {
-  margin-right: 38px;
 }
 .about__content {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.25;
   letter-spacing: 0.06em;
 
   color: #111518;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1366px) {
+    font-size: 16px;
+  }
 }
 .about__education {
-  padding-bottom: 15px;
-
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.56;
+  font-size: 12px;
+  line-height: 1.67;
   color: #b9b9b9;
+  @media screen and (min-width: 768px) {
+    font-size: 10px;
+    line-height: 2;
+  }
+  @media screen and (min-width: 1366px) {
+    padding-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
-.about__education--three {
-  margin-bottom: 15px;
-}
-
 .about__education--one::before {
   content: '';
   display: block;
   width: 25px;
-  height: 3px;
+  height: 2px;
   background-color: #ff6b09;
   margin-bottom: 15px;
 }
+
+.about__education--three {
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1366px) {
+    margin-bottom: 15px;
+  }
+}
+
 .about__certificate {
+  width: 100%;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.56;
+  font-size: 12px;
+  line-height: 1.66;
   text-decoration-line: underline;
 
   color: #ff6b09;
+
+  @media screen and (min-width: 1366px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
