@@ -30,12 +30,16 @@
 }
 
 .about__list-item {
-  display: flex;
+  position: relative;
+
   margin-bottom: 20px;
+  padding-left: 50px;
 
   &::before {
     content: '';
-    margin-right: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-image: url(../images/about/check__about.svg);
     width: 28px;
     height: 20px;
