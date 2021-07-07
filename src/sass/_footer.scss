@@ -2,23 +2,77 @@
     text-align: center;
 }
 
-.footer-padding {
+.footer_section {
 padding-top: 30px;
 padding-bottom: 30px;
+
+@media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        justify-content: normal;
+        }    
 }
 
 .footer_logo {
 margin-bottom: 18px;
+
+@media screen and (min-width: 768px) {
+        margin-bottom: 0px;
+        margin-right: 203px;
+        width: 128px;
+        height: 45px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        margin-right: 312px;
+    }
 }
 
 .footer_contact {
-display: flex;
-justify-content: center;
-margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 .footer_phone {
+display: flex;
+justify-content: center;
+margin-bottom: 30px;
+
+@media screen and (min-width: 768px) {
+
+        margin-bottom: 0px;
+        align-items: center;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 40px;
+            margin-left: 24px;
+            margin-right: 24px;
+            border-right: 1px solid #B9B9B9;
+        }    
+    }
+  }
+
+.footer_icon {
 margin-right: 10px ;
+    @media screen and (min-width: 768px) {
+        width: 24px;
+        height: 24px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        margin-right: 15px ;
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .contact-link {
@@ -27,9 +81,18 @@ margin-right: 10px ;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.22;
     letter-spacing: 0.08em;
     color: #111518;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        font-size: 30px;
+    }
 }
 
 .footer_instagram {
@@ -46,28 +109,8 @@ margin-right: 10px ;
     padding-bottom: 21px;
 }
 
-@media screen and (min-width: 768px) {
-   .footer-padding {
-       display: flex;
-       align-items: center;
-       padding-top: 40px;
-       padding-bottom: 40px;
-   } 
-
-   .footer_logo {
-       margin-bottom: 0px;
-       margin-right: 203px;
-   }
-
-   .footer_contact {
-       margin-bottom: 0px;
-   }
-
-   .footer_contact::after {
-       content: "";
-       display: inline-block;
-       height: 40px;
-       margin-left: 24px;
-       border-right: 1px solid #B9B9B9;
-   }
+.footer_rights {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
