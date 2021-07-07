@@ -133,6 +133,10 @@
     }
   }
 
+  &:required:focus:not(:placeholder-shown):invalid {
+    border-color: #ff0000;
+  }
+
   &--mb {
     margin-bottom: 20px;
 
