@@ -1,0 +1,9 @@
+:root {
+  --accent-color: #ff6b09;
+  --primary-bg-color: #e5e5e5;
+  --dark-text-bg-color: #111518;
+  --grey-text-bg-color: #b9b9b9;
+  --white-text-bg-color: #ffffff;
+  --transition-duration: 250ms;
+  --animation-timing-function: var(--transition-duration) cubic-bezier(0.4, 0, 0.2, 1);
+}
