@@ -11,20 +11,19 @@
   color: #111518;
 }
 .about__flex-container {
-  width: 100%;
+  max-width: 1205px;
   display: flex;
 }
+.about_img {
+  min-width: 530px;
+}
 .about__info {
-  width: 100%;
   margin-left: 33px;
 }
-.about__list {
-  width: 579px;
-  margin-bottom: 60px;
-}
+
 .about__title-list {
   padding-bottom: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   font-weight: 800;
   font-size: 30px;
@@ -34,11 +33,14 @@
 
   border-bottom: 1px solid #b9b9b9;
 }
-
+.about__list {
+  width: 579px;
+  margin-bottom: 20px;
+}
 .about__list-item {
   position: relative;
 
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding-left: 50px;
 
   &::before {
