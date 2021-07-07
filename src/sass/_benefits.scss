@@ -31,11 +31,15 @@
 
   &__title {
     margin-bottom: 30px;
+
     font-weight: 800;
     font-size: 20px;
     line-height: 1.35;
     letter-spacing: 0.03em;
     color: var(--white-text-bg-color);
+    @media screen and (max-width: 767px) {
+      width: 180px;
+    }
     @media screen and (min-width: 768px) and (max-width: 1365px) {
       margin-bottom: 60px;
       text-align: center;
@@ -53,6 +57,7 @@
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     counter-reset: item;
     @media screen and (max-width: 767px) {
+      width: 280px;
       padding-top: 20px;
       padding-left: 30px;
 
@@ -83,6 +88,9 @@
     font-size: 14px;
     line-height: 1.71;
     color: var(--dark-text-bg-color);
+    @media screen and (max-width: 767px) {
+      width: 236px;
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1365px) {
       min-width: 180px;
