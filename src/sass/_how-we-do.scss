@@ -1,6 +1,6 @@
 .how-we-do {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .overflow-hidden {
@@ -116,6 +116,11 @@
 }
 
 @media screen and (min-width: 1366px) {
+  .how-we-do {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
   .how-we-do__title {
     font-size: 46px;
     margin-bottom: 50px;
