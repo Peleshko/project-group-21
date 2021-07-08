@@ -1,9 +1,8 @@
 .benefits {
-  background-color: var(--white-text-bg-color);
   &__section {
     @media screen and (max-width: 767px) {
       padding-top: 0;
-      padding-left: 15%;
+
       padding-bottom: 50px;
       background-image: linear-gradient(
         to bottom,
@@ -58,11 +57,7 @@
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     counter-reset: item;
     @media screen and (max-width: 767px) {
-      max-width: 280px;
-      padding-top: 20px;
-      padding-left: 30px;
-
-      padding-bottom: 4px;
+      padding: 20px 22px;
     }
     @media screen and (min-width: 768px) and (max-width: 1365px) {
       display: flex;
@@ -88,9 +83,6 @@
     font-size: 14px;
     line-height: 1.71;
     color: var(--dark-text-bg-color);
-    @media screen and (max-width: 767px) {
-      max-width: 236px;
-    }
 
     @media screen and (min-width: 768px) and (max-width: 1365px) {
       min-width: 180px;
