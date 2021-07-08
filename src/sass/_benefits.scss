@@ -1,5 +1,4 @@
 .benefits {
-  background-color: var(--white-text-bg-color);
   &__section {
     @media screen and (max-width: 767px) {
       padding-top: 0;
@@ -16,16 +15,16 @@
       padding-bottom: 50px;
       background-image: linear-gradient(
         to bottom,
-        var(--dark-text-bg-color) 40%,
-        var(--white-text-bg-color) 40%
+        var(--dark-text-bg-color) 50%,
+        var(--white-text-bg-color) 50%
       );
     }
     @media screen and (min-width: 1366px) {
       padding: 0 auto;
       background-image: linear-gradient(
         to bottom,
-        var(--dark-text-bg-color) 40%,
-        var(--white-text-bg-color) 40%
+        var(--dark-text-bg-color) 50%,
+        var(--white-text-bg-color) 50%
       );
     }
   }
@@ -58,29 +57,25 @@
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     counter-reset: item;
     @media screen and (max-width: 767px) {
-      max-width: 280px;
       padding-top: 20px;
       padding-left: 30px;
 
       padding-bottom: 4px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1365px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
-
-      padding-left: 98px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
+      padding-left: 108px;
+      padding-right: 108px;
+      padding-top: 30px;
       padding-bottom: 21px;
-      margin-top: -40px;
     }
     @media screen and (min-width: 1366px) {
-      display: flex;
-      flex-wrap: wrap;
-      min-width: 1314px;
-      padding-left: 70px;
-      padding-top: 70px;
-      padding-bottom: 70px;
-
-      margin-bottom: -32px;
+      padding: 70px 82px;
     }
   }
   &__item {
@@ -88,23 +83,23 @@
     font-size: 14px;
     line-height: 1.71;
     color: var(--dark-text-bg-color);
-    @media screen and (max-width: 767px) {
-      max-width: 236px;
-    }
 
     @media screen and (min-width: 768px) and (max-width: 1365px) {
-      min-width: 180px;
-      margin-top: 40px;
-      margin-left: 40px;
-      flex-basis: calc(100% / 2 - 80px);
+      width: 225px;
+
+      margin-bottom: 22px;
+      &:nth-child(n + 5) {
+        margin-bottom: 0;
+      }
     }
     @media screen and (min-width: 1366px) {
       font-size: 20px;
       line-height: 1.2;
-      max-width: 356px;
-      flex-basis: calc(100% / 3 - 40px);
-      margin-left: 40px;
-      margin-top: 32px;
+      width: 356px;
+      margin-bottom: 32px;
+      &:nth-child(n + 5) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -116,7 +111,7 @@
 
   &__item::before {
     display: block;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     counter-increment: item;
     content: '— ' counter(item, decimal-leading-zero) ' ';
     line-height: 1.21;
