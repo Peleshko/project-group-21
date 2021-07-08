@@ -1,16 +1,24 @@
 <header class="header">
    <div class="container container__logo">
-      <a class="logo logo__header" href="#">
+      <a class="logo logo__header" href="#" change-fill>
          <svg width="128" height="45" aria-label="logo">
             <use class="logo__icon" href="./images/icons.svg#icon-logo"></use>
          </svg>
       </a>
       <nav class="header__navigation">
          <ul class="header__list">
-            <li class="header__item">studying program</li>
-            <li class="header__item">about</li>
-            <li class="header__item">training options</li>
-            <li class="header__item">contacts</li>
+            <li class="header__item">
+               <a class="header__link" href="#program">studying program</a>
+            </li>
+            <li class="header__item">
+               <a class="header__link" href="#about">about</a>
+            </li>
+            <li class="header__item">
+               <a class="header__link" href="#option">training options</a>
+            </li>
+            <li class="header__item">
+               <a class="header__link" href="#contacts">contacts</a>
+            </li>
          </ul>
          <button class="header__button" type="button">consultation by phone</button>
             <!-- mobile button menu start -->
@@ -26,20 +34,25 @@
                      <use  class="close-button__icon" href="./images/icons.svg#close"></use>
                   </svg>
                </button>
-               <ul class="mobile-menu__list">
-                  <li class="mobile-menu__item">
-                     <a href="#" class="mobile-menu__link">studying program</a>
-                  </li>
-                  <li class="mobile-menu__item">
-                     <a href="#" class="mobile-menu__link">about</a>
-                  </li>
-                  <li class="mobile-menu__item">
-                     <a href="#" class="mobile-menu__link">training options</a>
-                  </li>
-                  <li class="mobile-menu__item">
-                     <a href="#" class="mobile-menu__link">contacts</a>
-                  </li>
-               </ul>
+               <div class="mobile-menu__box">
+                  <ul class="mobile-menu__list">
+                     <li class="mobile-menu__item">
+                        <a href="#program" class="mobile-menu__link">Studying program</a>
+                     </li>
+                     <li class="mobile-menu__item">
+                        <a href="#about" class="mobile-menu__link">About</a>
+                     </li>
+                     <li class="mobile-menu__item">
+                        <a href="#option" class="mobile-menu__link">Training options</a>
+                     </li>
+                     <li class="mobile-menu__item">
+                        <a href="#contacts" class="mobile-menu__link">Contacts</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="mobile-menu__btn-box">
+                  <button class="mobile-menu__button" type="button">consultation by phone</button>
+               </div>
             </div>
          </div>
          <!-- mobile button menu end -->

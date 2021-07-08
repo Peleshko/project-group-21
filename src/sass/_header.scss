@@ -22,7 +22,6 @@
       text-align: center;
       text-transform: uppercase;
       cursor: pointer;
-      color: var(--grey-text-bg-color);
       &:not(:last-child) {
          margin-right: 40px;
       }
@@ -30,6 +29,9 @@
       &:hover {
          color: var(--accent-color);
       }    
+   }
+   &__link{
+      color: var(--grey-text-bg-color);
    }   
    &__button{
       font-weight: bold;
@@ -60,6 +62,13 @@
       }
    }
 }
+.logo{
+   fill: #111518;
+}
+.logo__header.fill {
+   fill: #ffffff;
+   z-index: 2;
+}
 .container__logo{
    display: flex;
    align-items: center;
@@ -74,6 +83,7 @@
    @media screen and (min-width: 1365px) {
       display: none;
    }
+
 }
 .mobile-menu{
    position: fixed;
@@ -92,13 +102,51 @@
    @media screen and (min-width: 1365px) {
       display: none;
    }
+   &__box{
+      display: flex;
+      justify-content: center;
+      margin-top: 159px;
+   }
+   &__link{
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 180%;
+      letter-spacing: 0.03em;
+      color: #FFFFFF;
+      @media screen and (max-width: 767px) {
+         font-size: 20px;
+      }
+   }
+   &__btn-box{
+      display: flex;
+      justify-content: center;
+   }
+   &__button{
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      border-style: solid;
+      border-width: 2px;
+      border-color: var(--accent-color);
+      background-color: transparent;
+      cursor: pointer;
+      padding: 17px 36px;
+      margin-top: 67px;
+      @media screen and (min-width: 768px) {
+         display: none;
+      }
+   }
 }
 .close-button{
    position: absolute;
    top: 43px;
-   right: 43px;
+   right: 65px;
    background-color: transparent;
    border: none;
+   cursor: pointer;
    &__icon{
       fill: #ffffff;
       }
@@ -109,4 +157,5 @@
    pointer-events: auto;
    transform: translateX(0);
  }
+
  // @media screen and (min-width: 768px)
