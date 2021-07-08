@@ -70,7 +70,7 @@
   }
   &__list {
     counter-reset: item;
-    z-index: 10;
+
     background-color: var(--white-text-bg-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     @media screen and (max-width: 767px) {

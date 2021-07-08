@@ -2,12 +2,13 @@
   background-color: var(--white-text-bg-color);
   &__section {
     @media screen and (max-width: 767px) {
-      padding-top: 50px;
+      padding-top: 0;
+      padding-left: 15%;
       padding-bottom: 50px;
       background-image: linear-gradient(
         to bottom,
         var(--dark-text-bg-color) 65%,
-        var(--primary-bg-color) 65%
+        var(--white-text-bg-color) 65%
       );
     }
     @media screen and (min-width: 768px) and (max-width: 1365px) {
@@ -16,7 +17,7 @@
       background-image: linear-gradient(
         to bottom,
         var(--dark-text-bg-color) 40%,
-        var(--primary-bg-color) 40%
+        var(--white-text-bg-color) 40%
       );
     }
     @media screen and (min-width: 1366px) {
@@ -24,7 +25,7 @@
       background-image: linear-gradient(
         to bottom,
         var(--dark-text-bg-color) 40%,
-        var(--primary-bg-color) 40%
+        var(--white-text-bg-color) 40%
       );
     }
   }
