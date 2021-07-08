@@ -14,6 +14,7 @@
   letter-spacing: 0.03em;
   color: var(--dark-text-bg-color);
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .how-we-do__list {
@@ -98,6 +99,8 @@
   transition: var(--animation-timing-function);
 }
 
+// TABLET
+
 @media screen and (min-width: 768px) {
   .how-we-do__item {
     min-width: 334px;
@@ -115,6 +118,8 @@
   }
 }
 
+// DESKTOP
+
 @media screen and (min-width: 1366px) {
   .how-we-do {
     padding-top: 130px;
@@ -124,6 +129,7 @@
   .how-we-do__title {
     font-size: 46px;
     margin-bottom: 50px;
+    text-align: left;
   }
 
   .how-we-do__item {
