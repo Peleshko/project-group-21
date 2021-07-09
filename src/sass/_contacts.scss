@@ -102,6 +102,15 @@
   &__accent {
     color: var(--accent-color);
   }
+
+  &__label {
+    display: block;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1366px) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .contacts-form__input {
@@ -136,14 +145,6 @@
 
   &:required:focus:not(:placeholder-shown):invalid {
     border-color: #ff0000;
-  }
-
-  &--mb {
-    margin-bottom: 20px;
-
-    @media screen and (min-width: 1366px) {
-      margin-bottom: 30px;
-    }
   }
 
   @media screen and (min-width: 768px) {
