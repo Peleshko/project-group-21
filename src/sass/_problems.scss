@@ -115,10 +115,11 @@
       line-height: 1.4;
       flex: 0 0 330px;
       margin-bottom: 30px;
+      &:nth-child(n + 4) {
+        margin-bottom: 0;
+      }
     }
-    &:nth-child(n + 4) {
-      margin-bottom: 0;
-    }
+    
   }
 
   &__item:not(:last-child) {
