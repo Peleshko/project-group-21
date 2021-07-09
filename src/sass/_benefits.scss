@@ -57,9 +57,7 @@
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     counter-reset: item;
     @media screen and (max-width: 767px) {
-
       padding: 20px 22px;
-
     }
     @media screen and (min-width: 768px) {
       display: flex;
