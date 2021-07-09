@@ -41,13 +41,21 @@
       max-width: 180px;
     }
     @media screen and (min-width: 768px) and (max-width: 1365px) {
-      margin-bottom: 60px;
       text-align: center;
       font-size: 26px;
       line-height: 1.31;
     }
-    @media screen and (min-width: 1366px) {
-      display: none;
+    &.visually-hidden {
+      @media screen and (min-width: 1366px) {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0 !important;
+        border: 0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden;
+      }
     }
   }
   &__list {
