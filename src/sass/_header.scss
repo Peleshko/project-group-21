@@ -143,10 +143,17 @@
       }
    }
 }
+.close-button-box{
+   display: flex;
+   justify-content: flex-end;
+   padding-top: 42px;
+}
 .close-button{
-   position: absolute;
+   /* position: absolute;
    top: 43px;
-   right: 65px;
+   right: 65px; */
+   display: flex;
+
    background-color: transparent;
    border: none;
    cursor: pointer;
